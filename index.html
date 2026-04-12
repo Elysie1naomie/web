@@ -129,7 +129,7 @@
       </div>
       <div class="about-visual fade-up delay-2">
         <div class="founder-card">
-          <img src="https://placehold.co/400x480/1a3a6b/ffffff?text=Frank+Tchatseu" alt="Frank Tchatseu, Fondateur de VALIDE" loading="lazy" />
+          <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1775930059/WhatsApp_Image_2026-04-11_at_11.29.12_AM_llmnnd.jpg" alt="Frank Tchatseu, Fondateur de VALIDE" loading="lazy" />
           <div class="founder-badge">
             <strong>Frank Tchatseu</strong>
             <span>Fondateur & CEO · Master 2 IA · UYI</span>
@@ -182,9 +182,8 @@
     </div>
     <div class="platforms-grid fade-up">
       <div class="platform-card">
-        <div class="platform-icon">📱</div>
         <div class="platform-badge">Application Mobile</div>
-        <h3>VALIDE App</h3>
+        <h3>VALIDE</h3>
         <p class="platform-target">Pour les étudiants universitaires — Yaoundé 1 & 2</p>
         <ul class="platform-features">
           <li><span>✓</span> Anciens sujets d'examens classés par matière</li>
@@ -203,8 +202,61 @@
           </a>
         </div>
       </div>
+
+      <!-- SHORT VALIDE -->
+      <div class="short-card" id="short1">
+        <div class="short-phone">
+          <div class="short-screen">
+            <video
+              id="ytShort1"
+              src="https://res.cloudinary.com/drknixj4y/video/upload/v1775930069/WhatsApp_Video_2026-04-11_at_11.29.11_AM_ehymkw.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+            ></video>
+          </div>
+          <div class="short-controls">
+            <button class="short-btn" id="playBtn1" onclick="toggleShortVideo('ytShort1','playBtn1')" aria-label="Pause/Play">
+              <svg class="icon-pause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+              <svg class="icon-play" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+            <button class="short-btn" id="muteBtn1" onclick="toggleMuteVideo('ytShort1','muteBtn1')" aria-label="Mute">
+              <svg class="icon-mute" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+              <svg class="icon-sound" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </button>
+          </div>
+        </div>
+        <p class="short-label">📱 VALIDE — Application mobile</p>
+      </div>
+
+      <!-- SHORT VALIDE SCHOOL -->
+      <div class="short-card" id="short2">
+        <div class="short-phone">
+          <div class="short-screen">
+            <iframe
+              id="ytShort2"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ&controls=0&modestbranding=1&rel=0&playsinline=1"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              title="VALIDE School Short"
+            ></iframe>
+          </div>
+          <div class="short-controls">
+            <button class="short-btn" id="playBtn2" onclick="toggleShort('ytShort2','playBtn2')" aria-label="Pause/Play">
+              <svg class="icon-pause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+              <svg class="icon-play" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+            <button class="short-btn" id="muteBtn2" onclick="toggleMute('ytShort2','muteBtn2')" aria-label="Mute">
+              <svg class="icon-mute" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+              <svg class="icon-sound" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </button>
+          </div>
+        </div>
+        <p class="short-label">🌐 VALIDE School — Plateforme web</p>
+      </div>
+
       <div class="platform-card platform-card-accent">
-        <div class="platform-icon">🌐</div>
         <div class="platform-badge">Plateforme Web</div>
         <h3>VALIDE School</h3>
         <p class="platform-target">Pour les élèves du secondaire — Lycées & Collèges</p>
@@ -255,7 +307,8 @@
 </section>
 
 <!-- STATS -->
-<section class="stats section-blue" id="stats">
+<section class="stats" id="stats">
+  <div class="stats-bg"></div>
   <div class="container">
     <div class="stats-grid fade-up">
       <div class="stat-card">
@@ -326,39 +379,47 @@
     <div class="crtv-block fade-up">
       <div class="crtv-badge">📺 Vu sur la CRTV — Chaîne Nationale</div>
       <div class="crtv-inner">
-        <div class="crtv-thumb">
-          <img src="https://placehold.co/480x270/1a3a6b/ffffff?text=Reportage+CRTV" alt="Reportage CRTV sur VALIDE" loading="lazy" />
-          <div class="play-btn">▶</div>
+        <div class="crtv-video-wrap">
+          <div class="crtv-lang-toggle">
+            <button class="lang-btn active" id="btnFR" onclick="switchCRTV('FR')">🇫🇷 Français</button>
+            <button class="lang-btn" id="btnEN" onclick="switchCRTV('EN')">🇬🇧 English</button>
+          </div>
+          <div class="crtv-thumb">
+            <video
+              id="crtvIframe"
+              src="https://res.cloudinary.com/drknixj4y/video/upload/v1775930069/WhatsApp_Video_2026-04-11_at_11.29.11_AM_ehymkw.mp4"
+              controls
+              playsinline
+              preload="metadata"
+            ></video>
+          </div>
         </div>
         <div class="crtv-text">
           <h3>VALIDE à la télévision nationale</h3>
           <p>VALIDE a été présenté dans un reportage de la CRTV, avec des témoignages d'étudiants utilisant la plateforme au quotidien.</p>
-          <a href="#" class="btn btn-primary">Voir le reportage ↗</a>
+          <a href="https://www.youtube.com/watch?v=zJ3qg9wS18w" target="_blank" id="crtvLink" class="btn btn-primary">Voir le reportage ↗</a>
         </div>
       </div>
     </div>
 
     <!-- Terrain -->
     <div class="terrain-block fade-up">
-      <h3>Nous allons à la rencontre de nos utilisateurs</h3>
-      <div class="terrain-grid">
-        <div class="terrain-img">
-          <img src="https://placehold.co/360x240/e8f0fe/1a3a6b?text=Yaoundé+1" alt="Présentation à l'Université de Yaoundé 1" loading="lazy" />
-          <span>Présentation à l'Université de Yaoundé 1</span>
-        </div>
-        <div class="terrain-img">
-          <img src="https://placehold.co/360x240/e8f0fe/1a3a6b?text=Yaoundé+2" alt="Session à l'Université de Yaoundé 2" loading="lazy" />
-          <span>Session de démonstration — Yaoundé 2</span>
-        </div>
-        <div class="terrain-img">
-          <img src="https://placehold.co/360x240/e8f0fe/1a3a6b?text=Lycées" alt="Rencontre avec des proviseurs" loading="lazy" />
-          <span>Rencontres avec des proviseurs de lycées</span>
-        </div>
-        <div class="terrain-img">
-          <img src="https://placehold.co/360x240/e8f0fe/1a3a6b?text=Enseignants" alt="Échanges avec des enseignants" loading="lazy" />
-          <span>Échanges avec des enseignants partenaires</span>
+      <div class="terrain-header">
+        <h3>Nous allons à la rencontre de nos utilisateurs</h3>
+        <div class="terrain-filters">
+          <button class="tfilter active" data-filter="all">Tout</button>
+          <button class="tfilter" data-filter="Université">Université</button>
+          <button class="tfilter" data-filter="Secondaire">Secondaire</button>
+          <button class="tfilter" data-filter="Partenaires">Partenaires</button>
+          <button class="tfilter" data-filter="Formation">Formation</button>
         </div>
       </div>
+
+      <div class="terrain-gallery" id="terrainGallery">
+        <!-- Les items sont rendus par JS -->
+      </div>
+
+      <div class="terrain-pagination" id="terrainPagination"></div>
     </div>
 
     <!-- Partenaires -->
@@ -420,22 +481,153 @@
   </div>
 </section>
 
-<!-- FOUNDER -->
-<section class="founder-section" id="team">
+<!-- TEAM -->
+<section class="team-section" id="team">
   <div class="container">
-    <div class="founder-grid fade-up">
-      <div class="founder-img-wrap">
-        <img src="https://placehold.co/380x460/1a3a6b/ffffff?text=Frank+Tchatseu" alt="Frank Tchatseu" loading="lazy" />
+    <div class="section-header fade-up">
+      <span class="section-tag">Notre équipe</span>
+      <h2>Les visages derrière VALIDE.</h2>
+      <p class="section-sub">Une équipe de jeunes passionnés, engagés pour transformer l'éducation au Cameroun.</p>
+    </div>
+
+    <!-- Fondateur mis en avant -->
+    <div class="founder-spotlight fade-up">
+      <div class="founder-spot-img">
+        <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1775930059/WhatsApp_Image_2026-04-11_at_11.29.12_AM_llmnnd.jpg" alt="Frank Tchatseu" loading="lazy" />
+        <div class="spot-badge">Fondateur</div>
       </div>
-      <div class="founder-bio">
-        <span class="section-tag light">Le fondateur</span>
+      <div class="founder-spot-bio">
+        <span class="section-tag">CEO & Fondateur</span>
         <h2>Frank Tchatseu</h2>
-        <p class="founder-title">Fondateur & CEO · Master 2 IA · Université de Yaoundé I</p>
-        <p>Ancien élève du Lycée Bilingue de Koutaba, licencié de l'Université de Dschang, Frank a vécu personnellement le manque de ressources pédagogiques. En 2022, il a fondé VALIDE pour que plus aucun jeune ne vive cette réalité. Il dirige aujourd'hui une équipe de jeunes passionnés engagés pour transformer l'éducation au Cameroun.</p>
+        <p class="founder-title">Master 2 Intelligence Artificielle · Université de Yaoundé I</p>
+        <p>Ancien élève du Lycée Bilingue de Koutaba, licencié de l'Université de Dschang. En 2022, il fonde VALIDE après avoir vécu personnellement le manque de ressources pédagogiques. Il pilote la vision produit, la stratégie et les partenariats.</p>
         <blockquote class="founder-quote-dark">
           "Les pays africains n'ont pas un problème de manque d'emploi, mais de manque de compétences. VALIDE est là pour changer ça."
         </blockquote>
+        <div class="member-socials">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+        </div>
       </div>
+    </div>
+
+    <!-- Grille équipe -->
+    <div class="team-grid fade-up">
+
+      <div class="team-card">
+        <div class="team-card-img">
+          <img src="https://placehold.co/280x300/1e4d8c/ffffff?text=Ingrid+M." alt="Ingrid Mboumba" loading="lazy" />
+          <div class="team-card-overlay">
+            <div class="member-socials-overlay">
+              <a href="#">in</a><a href="#">𝕏</a>
+            </div>
+          </div>
+        </div>
+        <div class="team-card-info">
+          <h4>Ingrid Mboumba</h4>
+          <span>CTO · Ingénieure Full Stack</span>
+          <p>Diplômée de l'ENSP Yaoundé, elle architecture les plateformes VALIDE App et VALIDE School. Passionnée d'IA appliquée à l'éducation.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-img">
+          <img src="https://placehold.co/280x300/243b6e/ffffff?text=Kevin+N." alt="Kevin Nkemdirim" loading="lazy" />
+          <div class="team-card-overlay">
+            <div class="member-socials-overlay"><a href="#">in</a><a href="#">𝕏</a></div>
+          </div>
+        </div>
+        <div class="team-card-info">
+          <h4>Kevin Nkemdirim</h4>
+          <span>Lead Développeur Mobile</span>
+          <p>Expert Flutter & React Native, il développe et maintient l'application mobile VALIDE disponible sur iOS et Android.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-img">
+          <img src="https://placehold.co/280x300/1a3a6b/ffffff?text=Aïcha+D." alt="Aïcha Diallo" loading="lazy" />
+          <div class="team-card-overlay">
+            <div class="member-socials-overlay"><a href="#">in</a><a href="#">𝕏</a></div>
+          </div>
+        </div>
+        <div class="team-card-info">
+          <h4>Aïcha Diallo</h4>
+          <span>Responsable Contenu Pédagogique</span>
+          <p>Ancienne enseignante de mathématiques, elle supervise la qualité et la structuration de toutes les ressources pédagogiques de la plateforme.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-img">
+          <img src="https://placehold.co/280x300/2a4a7f/ffffff?text=Boris+T." alt="Boris Tagne" loading="lazy" />
+          <div class="team-card-overlay">
+            <div class="member-socials-overlay"><a href="#">in</a><a href="#">𝕏</a></div>
+          </div>
+        </div>
+        <div class="team-card-info">
+          <h4>Boris Tagne</h4>
+          <span>Ingénieur IA & Data</span>
+          <p>Spécialiste en NLP et machine learning, il développe l'assistant IA pédagogique et les algorithmes de quiz personnalisés.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-img">
+          <img src="https://placehold.co/280x300/1c3f72/ffffff?text=Sandra+E." alt="Sandra Essomba" loading="lazy" />
+          <div class="team-card-overlay">
+            <div class="member-socials-overlay"><a href="#">in</a><a href="#">𝕏</a></div>
+          </div>
+        </div>
+        <div class="team-card-info">
+          <h4>Sandra Essomba</h4>
+          <span>UI/UX Designer</span>
+          <p>Designer produit diplômée de l'IUT de Douala, elle conçoit des interfaces simples et accessibles pour les élèves de toutes les régions.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-img">
+          <img src="https://placehold.co/280x300/22457a/ffffff?text=Paul+F." alt="Paul Fomekong" loading="lazy" />
+          <div class="team-card-overlay">
+            <div class="member-socials-overlay"><a href="#">in</a><a href="#">𝕏</a></div>
+          </div>
+        </div>
+        <div class="team-card-info">
+          <h4>Paul Fomekong</h4>
+          <span>Responsable Marketing & Croissance</span>
+          <p>Il pilote la stratégie d'acquisition, les campagnes terrain et les partenariats avec les universités et lycées du Cameroun.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-img">
+          <img src="https://placehold.co/280x300/1e4070/ffffff?text=Mariama+B." alt="Mariama Bello" loading="lazy" />
+          <div class="team-card-overlay">
+            <div class="member-socials-overlay"><a href="#">in</a><a href="#">𝕏</a></div>
+          </div>
+        </div>
+        <div class="team-card-info">
+          <h4>Mariama Bello</h4>
+          <span>Chargée de Partenariats</span>
+          <p>Elle développe les relations avec les ONG, fondations et institutions éducatives pour étendre l'impact de VALIDE dans les zones reculées.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-img">
+          <img src="https://placehold.co/280x300/163568/ffffff?text=Cédric+A." alt="Cédric Atangana" loading="lazy" />
+          <div class="team-card-overlay">
+            <div class="member-socials-overlay"><a href="#">in</a><a href="#">𝕏</a></div>
+          </div>
+        </div>
+        <div class="team-card-info">
+          <h4>Cédric Atangana</h4>
+          <span>Développeur Backend & DevOps</span>
+          <p>Il assure la robustesse des APIs, la sécurité des données et l'infrastructure cloud qui fait tourner VALIDE 24h/24.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
