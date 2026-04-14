@@ -268,28 +268,28 @@ if (partnersGrid) {
 
 // ===== GALERIE TERRAIN PAGINÉE =====
 const TERRAIN_PHOTOS = [
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930067/WhatsApp_Image_2026-04-11_at_11.23.16_AM_tbjeki.jpg',    alt: 'Terrain 1',  tag: 'Université',  caption: "Présentation à l'Université de Yaoundé 1" },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930062/WhatsApp_Image_2026-04-11_at_11.34.04_AM_1_v9fv0t.jpg',  alt: 'Terrain 2',  tag: 'Université',  caption: 'Session de démonstration — Yaoundé 2' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930062/WhatsApp_Image_2026-04-11_at_11.34.04_AM_l6pywr.jpg',    alt: 'Terrain 3',  tag: 'Secondaire',  caption: 'Rencontres avec des proviseurs de lycées' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930059/WhatsApp_Image_2026-04-11_at_11.34.03_AM_1_jhuajw.jpg',  alt: 'Terrain 4',  tag: 'Partenaires', caption: 'Échanges avec des enseignants partenaires' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930059/WhatsApp_Image_2026-04-11_at_11.29.12_AM_1_dro6pc.jpg',  alt: 'Terrain 5',  tag: 'Université',  caption: 'Session de démonstration live sur campus' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930058/WhatsApp_Image_2026-04-11_at_11.24.27_AM_wcl1ce.jpg',    alt: 'Terrain 6',  tag: 'Secondaire',  caption: "Visite dans les collèges de l'Adamaoua" },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930057/WhatsApp_Image_2026-04-11_at_11.29.13_AM_sn5ynt.jpg',    alt: 'Terrain 7',  tag: 'Formation',   caption: "Déploiement dans l'Extrême-Nord" },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930056/WhatsApp_Image_2026-04-11_at_11.23.14_AM_fuozke.jpg',    alt: 'Terrain 8',  tag: 'Formation',   caption: 'Atelier de formation des enseignants' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930055/WhatsApp_Image_2026-04-11_at_11.23.16_AM_1_rftnby.jpg',  alt: 'Terrain 9',  tag: 'Université',  caption: "Lancement à l'Université de Dschang" },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930055/WhatsApp_Image_2026-04-11_at_11.23.17_AM_bqouf2.jpg',    alt: 'Terrain 10', tag: 'Secondaire',  caption: 'Présentation dans un lycée de Douala' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930053/WhatsApp_Image_2026-04-11_at_11.23.15_AM_1_m05zdg.jpg',  alt: 'Terrain 11', tag: 'Partenaires', caption: 'Partenariat avec un lycée de Bafoussam' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930050/WhatsApp_Image_2026-04-11_at_11.23.12_AM_vlydhe.jpg',    alt: 'Terrain 12', tag: 'Formation',   caption: 'Session de formation à Ngaoundéré' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930050/WhatsApp_Image_2026-04-11_at_11.23.13_AM_2_z3elsk.jpg',  alt: 'Terrain 13', tag: 'Université',  caption: 'Rencontre étudiante sur le campus' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930049/WhatsApp_Image_2026-04-11_at_11.23.12_AM_1_uzbhlj.jpg',  alt: 'Terrain 14', tag: 'Secondaire',  caption: 'Démonstration dans un collège' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930048/WhatsApp_Image_2026-04-11_at_11.23.13_AM_1_rmo3gv.jpg',  alt: 'Terrain 15', tag: 'Partenaires', caption: 'Réunion avec des partenaires institutionnels' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930047/WhatsApp_Image_2026-04-11_at_11.23.11_AM_cgupwi.jpg',    alt: 'Terrain 16', tag: 'Formation',   caption: 'Formation des formateurs VALIDE' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930045/WhatsApp_Image_2026-04-11_at_11.23.09_AM_1_id6d4b.jpg',  alt: 'Terrain 17', tag: 'Université',  caption: 'Présentation officielle sur campus' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930046/WhatsApp_Image_2026-04-11_at_11.23.12_AM_2_zezm6e.jpg',  alt: 'Terrain 18', tag: 'Secondaire',  caption: 'Visite terrain dans les lycées' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930045/WhatsApp_Image_2026-04-11_at_11.23.09_AM_vsgd6x.jpg',    alt: 'Terrain 19', tag: 'Partenaires', caption: 'Échange avec des associations étudiantes' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930045/WhatsApp_Image_2026-04-11_at_11.23.10_AM_wosbsv.jpg',    alt: 'Terrain 20', tag: 'Formation',   caption: 'Atelier pédagogique avec les enseignants' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930044/WhatsApp_Image_2026-04-11_at_11.23.13_AM_jhhoxp.jpg',    alt: 'Terrain 21', tag: 'Université',  caption: 'Session interactive avec les étudiants' },
-  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930044/WhatsApp_Image_2026-04-11_at_11.23.08_AM_c5d8jo.jpg',    alt: 'Terrain 22', tag: 'Secondaire',  caption: 'Rencontre avec les élèves du secondaire' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930050/WhatsApp_Image_2026-04-11_at_11.23.13_AM_2_z3elsk.jpg',   alt: 'Terrain 1',  tag: 'Université',  caption: 'Rencontre étudiante sur le campus' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930049/WhatsApp_Image_2026-04-11_at_11.23.12_AM_1_uzbhlj.jpg',   alt: 'Terrain 2',  tag: 'Secondaire',  caption: 'Démonstration dans un collège' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930048/WhatsApp_Image_2026-04-11_at_11.23.13_AM_1_rmo3gv.jpg',   alt: 'Terrain 3',  tag: 'Partenaires', caption: 'Réunion avec des partenaires institutionnels' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930047/WhatsApp_Image_2026-04-11_at_11.23.11_AM_cgupwi.jpg',     alt: 'Terrain 4',  tag: 'Formation',   caption: 'Formation des formateurs VALIDE' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930045/WhatsApp_Image_2026-04-11_at_11.23.09_AM_1_id6d4b.jpg',   alt: 'Terrain 5',  tag: 'Université',  caption: 'Présentation officielle sur campus' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930046/WhatsApp_Image_2026-04-11_at_11.23.12_AM_2_zezm6e.jpg',   alt: 'Terrain 6',  tag: 'Secondaire',  caption: 'Visite terrain dans les lycées' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930057/WhatsApp_Image_2026-04-11_at_11.29.13_AM_sn5ynt.jpg',     alt: 'Terrain 7',  tag: 'Formation',   caption: "Déploiement dans l'Extrême-Nord" },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930056/WhatsApp_Image_2026-04-11_at_11.23.14_AM_fuozke.jpg',     alt: 'Terrain 8',  tag: 'Formation',   caption: 'Atelier de formation des enseignants' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930055/WhatsApp_Image_2026-04-11_at_11.23.16_AM_1_rftnby.jpg',   alt: 'Terrain 9',  tag: 'Université',  caption: "Lancement à l'Université de Dschang" },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930055/WhatsApp_Image_2026-04-11_at_11.23.17_AM_bqouf2.jpg',     alt: 'Terrain 10', tag: 'Secondaire',  caption: 'Présentation dans un lycée de Douala' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930053/WhatsApp_Image_2026-04-11_at_11.23.15_AM_1_m05zdg.jpg',   alt: 'Terrain 11', tag: 'Partenaires', caption: 'Partenariat avec un lycée de Bafoussam' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930050/WhatsApp_Image_2026-04-11_at_11.23.12_AM_vlydhe.jpg',     alt: 'Terrain 12', tag: 'Formation',   caption: 'Session de formation à Ngaoundéré' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930067/WhatsApp_Image_2026-04-11_at_11.23.16_AM_tbjeki.jpg',     alt: 'Terrain 13', tag: 'Université',  caption: "Présentation à l'Université de Yaoundé 1" },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930062/WhatsApp_Image_2026-04-11_at_11.34.04_AM_1_v9fv0t.jpg',   alt: 'Terrain 14', tag: 'Université',  caption: 'Session de démonstration — Yaoundé 2' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930062/WhatsApp_Image_2026-04-11_at_11.34.04_AM_l6pywr.jpg',     alt: 'Terrain 15', tag: 'Secondaire',  caption: 'Rencontres avec des proviseurs de lycées' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930059/WhatsApp_Image_2026-04-11_at_11.34.03_AM_1_jhuajw.jpg',   alt: 'Terrain 16', tag: 'Partenaires', caption: 'Échanges avec des enseignants partenaires' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930059/WhatsApp_Image_2026-04-11_at_11.29.12_AM_1_dro6pc.jpg',   alt: 'Terrain 17', tag: 'Université',  caption: 'Session de démonstration live sur campus' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930058/WhatsApp_Image_2026-04-11_at_11.24.27_AM_wcl1ce.jpg',     alt: 'Terrain 18', tag: 'Secondaire',  caption: "Visite dans les collèges de l'Adamaoua" },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930045/WhatsApp_Image_2026-04-11_at_11.23.09_AM_vsgd6x.jpg',     alt: 'Terrain 19', tag: 'Partenaires', caption: 'Échange avec des associations étudiantes' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930045/WhatsApp_Image_2026-04-11_at_11.23.10_AM_wosbsv.jpg',     alt: 'Terrain 20', tag: 'Formation',   caption: 'Atelier pédagogique avec les enseignants' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930044/WhatsApp_Image_2026-04-11_at_11.23.13_AM_jhhoxp.jpg',     alt: 'Terrain 21', tag: 'Université',  caption: 'Session interactive avec les étudiants' },
+  { src: 'https://res.cloudinary.com/drknixj4y/image/upload/v1775930044/WhatsApp_Image_2026-04-11_at_11.23.08_AM_c5d8jo.jpg',     alt: 'Terrain 22', tag: 'Secondaire',  caption: 'Rencontre avec les élèves du secondaire' },
 ];
 
 const PER_PAGE = 6;
@@ -316,12 +316,13 @@ function renderGallery() {
 
   setTimeout(() => {
     gallery.innerHTML = items.map((p, i) => {
-      return '<div class="terrain-img" style="animation-delay:' + (i * 0.07) + 's">' +
+      return '<div class="terrain-img" style="animation-delay:' + (i * 0.07) + 's" onclick="openLightbox(\'' + p.src.replace(/'/g, "\\'") + '\', \'' + p.caption.replace(/'/g, "\\'") + '\')">' +
         '<img src="' + p.src + '" alt="' + p.alt + '" loading="lazy" />' +
         '<div class="terrain-hover-info">' +
           '<span class="terrain-tag">' + p.tag + '</span>' +
           '<p>' + p.caption + '</p>' +
         '</div>' +
+        '<div class="terrain-zoom-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>' +
       '</div>';
     }).join('');
 
@@ -477,4 +478,52 @@ function switchCRTV(lang) {
 
   btnFR.classList.toggle('active', lang === 'FR');
   btnEN.classList.toggle('active', lang === 'EN');
+}
+
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+
+// ===== LIGHTBOX =====
+function openLightbox(src, caption) {
+  const lb = document.getElementById('lightbox');
+  lb.querySelector('.lb-img').src = src;
+  lb.querySelector('.lb-caption').textContent = caption || '';
+  lb.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  const lb = document.getElementById('lightbox');
+  lb.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const lb = document.getElementById('lightbox');
+  if (!lb) return;
+  lb.addEventListener('click', (e) => {
+    if (e.target === lb) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+});
+
+// ===== TESTIMONIALS SLIDER =====
+function scrollTesti(dir) {
+  const track = document.getElementById('testiTrack');
+  if (track) track.scrollBy({ left: dir * 300, behavior: 'smooth' });
 }
