@@ -527,3 +527,7 @@ function scrollTesti(dir) {
   const track = document.getElementById('testiTrack');
   if (track) track.scrollBy({ left: dir * 300, behavior: 'smooth' });
 }
+
+// ===== FOOTER YEAR =====
+const yearEl = document.getElementById('footer-year');
+if (yearEl) yearEl.textContent = '© ' + new Date().getFullYear() + ' VALIDE — Tous droits réservés';

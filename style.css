@@ -147,7 +147,7 @@ ul { list-style: none; }
   gap: 20px;
   align-items: stretch;
 }
-.platform-card { background: #fff; border: 1px solid #e8f0fe; border-radius: 24px; padding: 40px; transition: transform 0.3s, box-shadow 0.3s; min-width: 380px; height: 100%; box-sizing: border-box; }
+.platform-card { background: #fff; border: 1px solid #e8f0fe; border-radius: 24px; padding: 32px; transition: transform 0.3s, box-shadow 0.3s; min-width: 420px; max-width: 560px; height: 100%; box-sizing: border-box; overflow: hidden; }
 .platform-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
 .platform-card-accent { background: linear-gradient(135deg, #1a3a6b, #2a5298); color: #fff; border-color: transparent; }
 .platform-icon { font-size: 2.5rem; margin-bottom: 16px; }
@@ -157,7 +157,8 @@ ul { list-style: none; }
 .platform-target { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 24px; }
 .platform-card-accent .platform-target { color: rgba(255,255,255,0.7); }
 .platform-features { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
-.platform-features li { display: flex; gap: 10px; font-size: 0.9rem; color: var(--text-muted); align-items: flex-start; }
+.platform-features li { display: flex; gap: 10px; font-size: 0.9rem; color: var(--text-muted); align-items: flex-start; overflow: hidden; }
+.platform-features li span:last-child { overflow: hidden; text-overflow: ellipsis; word-break: break-word; }
 .platform-card-accent .platform-features li { color: rgba(255,255,255,0.8); }
 .platform-features li span { color: var(--blue-mid); font-weight: 700; flex-shrink: 0; }
 .platform-card-accent .platform-features li span { color: #93c5fd; }
@@ -2130,4 +2131,44 @@ ul { list-style: none; }
 @media (max-width: 768px) {
   .founder-card { max-width: 280px; margin: 0 auto; }
   .founder-card img { max-height: 320px; object-fit: cover; }
+}
+
+/* ===== LOGO IMAGE ===== */
+.logo { display: flex; align-items: center; gap: 8px; }
+.logo-img { width: 44px; height: 44px; object-fit: contain; }
+
+/* ===== PLATFORM ARROWS — remplacé par SVG inline ===== */
+.platforms-grid { position: relative; }
+}
+
+@media (max-width: 768px) {
+  .platforms-grid .platform-card:first-child::after,
+  .platforms-grid .platform-card:first-child::before,
+  .platforms-grid .platform-card:nth-child(3)::after,
+  .platforms-grid .platform-card:nth-child(3)::before { display: none; }
+}
+
+/* ===== PLATFORM SVG ARROWS ===== */
+.plat-svg-arrow {
+  position: absolute;
+  width: 160px;
+  height: 80px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Flèche 1 : part du coin haut-droit de la carte VALIDE, pointe vers le haut du short */
+.arrow-1 {
+  top: 20px;
+  left: calc(25% - 30px);
+}
+
+/* Flèche 2 : part du coin bas-droit de la carte VALIDE School, pointe vers le bas du short */
+.arrow-2 {
+  bottom: 20px;
+  left: calc(50% - 30px);
+}
+
+@media (max-width: 1100px) {
+  .plat-svg-arrow { display: none; }
 }

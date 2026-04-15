@@ -14,7 +14,10 @@
 <!-- NAV -->
 <nav class="nav" id="navbar">
   <div class="container nav-inner">
-    <a href="#" class="logo">VALIDE<span>.</span></a>
+    <a href="#" class="logo">
+      <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776192955/WhatsApp_Image_2026-04-14_at_11.53.07_AM-removebg-preview_gim3dl.png" alt="VALIDE logo" class="logo-img" />
+      VALIDE<span>.</span>
+    </a>
     <ul class="nav-links">
       <li><a href="#about" data-i18n="nav.about">À propos</a></li>
       <li><a href="#platforms" data-i18n="nav.platforms">Plateformes</a></li>
@@ -51,22 +54,17 @@
   </div>
   <div class="container hero-inner">
     <div class="hero-text fade-up">
-      <h1><span data-i18n="hero.title">L'éducation de qualité,</span><br /><span class="highlight" data-i18n="hero.highlight">accessible à tous.</span></h1>
-      <p data-i18n="hero.subtitle">Des milliers de ressources pédagogiques, des quiz intelligents et un assistant IA — gratuitement, pour chaque élève camerounais.</p>
+      <h1><span data-i18n="hero.title"></span><br /><span class="highlight" data-i18n="hero.highlight"></span></h1>
+      <p data-i18n="hero.subtitle"></p>
       <div class="hero-cta">
         <a href="https://play.google.com/store" target="_blank" class="btn btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83 1-.83 1.5-.5l14 8.5-14 8.5c-.5.33-1.5.33-1.5-.5z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 512 512" fill="currentColor"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256-256L47 0zm425.6 225.6l-58.9-34-65.7 64.5 65.7 64.5 60.1-34.3c17.1-9.8 17.1-34.9-1.2-60.7zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
           <span data-i18n="hero.play_store">Play Store</span>
         </a>
         <a href="https://apps.apple.com" target="_blank" class="btn btn-outline-white">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-          <span data-i18n="hero.app_store">App Store</span>
+          <span data-i18n="hero.app_store"></span>
         </a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-pill"><strong>25 000+</strong> <span data-i18n="hero.stat_students">étudiants</span></div>
-        <div class="stat-pill"><strong>10 000+</strong> <span data-i18n="hero.stat_resources">ressources</span></div>
-        <div class="stat-pill"><span data-i18n="hero.stat_free">Gratuit à 100%</span></div>
       </div>
     </div>
     <div class="hero-visual fade-up delay-2">
@@ -168,6 +166,8 @@
       <h2 data-i18n="platforms.title">Deux plateformes,<br />un seul objectif.</h2>
     </div>
     <div class="platforms-grid fade-up">
+      <!-- Flèche 1 : carte VALIDE → short VALIDE -->
+      <svg class="plat-svg-arrow arrow-1" viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 70 C10 20 150 10 150 10" stroke="#1a3a6b" stroke-width="2.5" stroke-dasharray="6 4" stroke-linecap="round"/><polygon points="143,5 153,10 143,15" fill="#1a3a6b"/></svg>
       <div class="platform-card">
         <div class="platform-badge" data-i18n="platforms.app_badge">Application Mobile</div>
         <h3>VALIDE</h3>
@@ -175,7 +175,7 @@
         <ul class="platform-features">
           <li><span>✓</span> <span data-i18n="platforms.app_feat1">Anciens sujets d'examens classés par matière</span></li>
           <li><span>✓</span> <span data-i18n="platforms.app_feat2">Assistant IA pédagogique 24h/24</span></li>
-          <li><span>✓</span> <span data-i18n="platforms.app_feat3"></span>Quiz intelligents personnalisés</span></li>
+          <li><span>✓</span> <span data-i18n="platforms.app_feat3">Quiz intelligents personnalisés</span></li>
           <li><span>✓</span> <span data-i18n="platforms.app_feat4">Mode hors connexion</span></li>
         </ul>
         <div class="platform-stores">
@@ -217,8 +217,12 @@
         <p class="short-label" data-i18n="platforms.short_label1">📱 VALIDE — Application mobile</p>
       </div>
 
+      <!-- Flèche 2 : carte VALIDE School → short VALIDE School -->
+      <svg class="plat-svg-arrow arrow-2" viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 10 C10 60 150 70 150 70" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" stroke-dasharray="6 4" stroke-linecap="round"/><polygon points="143,65 153,70 143,75" fill="rgba(255,255,255,0.7)"/></svg>
+      <!-- Flèche 2 : carte VALIDE School → short VALIDE School -->
+      <svg class="plat-svg-arrow arrow-2" viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 10 C10 60 150 70 150 70" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" stroke-dasharray="6 4" stroke-linecap="round"/><polygon points="143,65 153,70 143,75" fill="rgba(255,255,255,0.7)"/></svg>
       <div class="platform-card platform-card-accent">
-        <div class="platform-badge" data-i18n="platforms.web_badge">Plateforme Web</div>
+        <div class="platform-badge" data-i18n="platforms.web_badge">Application Mobile</div>
         <h3>VALIDE School</h3>
         <p class="platform-target" data-i18n="platforms.web_target">Pour les élèves du secondaire — Lycées & Collèges</p>
         <ul class="platform-features">
@@ -255,7 +259,7 @@
             </button>
           </div>
         </div>
-        <p class="short-label" data-i18n="platforms.short_label2">🌐 VALIDE School — Plateforme web</p>
+        <p class="short-label" data-i18n="platforms.short_label2">🌐 VALIDE School — APPLICATION MOBILE</p>
       </div>
     </div>
   </div>
@@ -730,7 +734,7 @@
           <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
         <div class="faq-answer">
-          <p data-i18n="faq.a5">Oui. L'app VALIDE cible les étudiants universitaires (UY1 & UY2), tandis que VALIDE School est une plateforme web dédiée aux élèves du secondaire (lycées et collèges).</p>
+          <p data-i18n="faq.a5">Oui. L'app VALIDE cible les étudiants universitaires (UY1 & UY2), tandis que VALIDE School est une application mobile dédiée aux élèves du secondaire (lycées et collèges).</p>
         </div>
       </div>
 
@@ -758,7 +762,10 @@
 <footer class="footer">
   <div class="container footer-inner">
     <div class="footer-brand">
-      <a href="#" class="logo logo-white">VALIDE<span>.</span></a>
+      <a href="#" class="logo logo-white">
+        <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776192955/WhatsApp_Image_2026-04-14_at_11.53.07_AM-removebg-preview_gim3dl.png" alt="VALIDE logo" class="logo-img" style="filter:brightness(0) invert(1);" />
+        VALIDE<span>.</span>
+      </a>
       <p data-i18n="footer.tagline">L'éducation de qualité,<br />accessible à tous au Cameroun.</p>
       <div class="social-links">
         <a href="#" aria-label="Facebook">
@@ -788,14 +795,13 @@
     <div class="footer-links">
       <h5 data-i18n="footer.platforms_title">Plateformes</h5>
       <ul>
-        <li><a href="#">VALIDE  (Play Store)</a></li>
-        <li><a href="#">VALIDE  (App Store)</a></li>
+        <li><a href="#">VALIDE </a></li>
         <li><a href="https://www.valide-school.com" target="_blank">VALIDE School</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <p><span data-i18n="footer.copyright"></span>© 2025 VALIDE — Tous droits réservés</span> · <a href="#" data-i18n="footer.legal">Mentions légales</a> · <a href="#" data-i18n="footer.privacy">Confidentialité</a></p>
+    <p><span id="footer-year"></span> · <a href="#" data-i18n="footer.legal">Mentions légales</a> · <a href="#" data-i18n="footer.privacy">Confidentialité</a></p>
   </div>
 </footer>
 
