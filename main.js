@@ -100,22 +100,10 @@ window.addEventListener('scroll', () => {
   });
 }, { passive: true });
 
-// ===== CURSOR GLOW =====
-const cursor = document.createElement('div');
-cursor.className = 'cursor-glow';
-document.body.appendChild(cursor);
-let mouseX = 0, mouseY = 0, curX = 0, curY = 0;
-document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
-(function animateCursor() {
-  curX += (mouseX - curX) * 0.1;
-  curY += (mouseY - curY) * 0.1;
-  cursor.style.left = curX + 'px';
-  cursor.style.top = curY + 'px';
-  requestAnimationFrame(animateCursor);
-})();
+// ===== CURSOR GLOW — désactivé =====
 
-// ===== MAGNETIC BUTTONS =====
-document.querySelectorAll('.btn').forEach(btn => {
+// ===== MAGNETIC BUTTONS (exclut le logo) =====
+document.querySelectorAll('.btn:not(.logo)').forEach(btn => {
   btn.addEventListener('mousemove', e => {
     const r = btn.getBoundingClientRect();
     btn.style.transform = 'translate(' + ((e.clientX - r.left - r.width / 2) * 0.18) + 'px,' + ((e.clientY - r.top - r.height / 2) * 0.18) + 'px)';
@@ -150,29 +138,6 @@ document.querySelectorAll('.platform-card, .testi-card, .feature-card').forEach(
   });
   card.addEventListener('mouseleave', () => { card.style.transform = ''; });
 });
-
-// ===== HERO TITLE FADE IN =====
-const heroTitle = document.querySelector('.hero-text h1');
-if (heroTitle) {
-  heroTitle.style.opacity = '0';
-  setTimeout(() => {
-    heroTitle.style.transition = 'opacity 0.6s ease';
-    heroTitle.style.opacity = '1';
-  }, 300);
-}
-
-// ===== TYPEWRITER HERO SUBTITLE =====
-const heroP = document.querySelector('.hero-text > p');
-if (heroP) {
-  const text = heroP.textContent;
-  heroP.textContent = '';
-  heroP.style.opacity = '1';
-  let i = 0;
-  function typeChar() {
-    if (i < text.length) { heroP.textContent += text[i++]; setTimeout(typeChar, 22); }
-  }
-  setTimeout(typeChar, 900);
-}
 
 // ===== HERO STAT PILLS COUNT UP =====
 document.querySelectorAll('.stat-pill strong').forEach(el => {

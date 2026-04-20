@@ -536,8 +536,8 @@ ul { list-style: none; }
   border-radius: 0 2px 2px 0;
 }
 
-/* ===== CURSOR GLOW ===== */
-.cursor-glow {
+/* ===== CURSOR GLOW — désactivé ===== */
+.cursor-glow { display: none; }
   position: fixed;
   width: 320px;
   height: 320px;
@@ -795,13 +795,7 @@ ul { list-style: none; }
   to { width: 100%; }
 }
 
-/* ===== GLITCH LOGO ===== */
-.logo {
-  position: relative;
-}
-.logo:hover {
-  animation: glitch 0.4s steps(2) infinite;
-}
+/* ===== GLITCH LOGO — désactivé ===== */
 @keyframes glitch {
   0%   { text-shadow: 2px 0 #60a5fa, -2px 0 #f87171; }
   25%  { text-shadow: -2px 0 #60a5fa, 2px 0 #f87171; clip-path: inset(20% 0 60% 0); }
@@ -1035,10 +1029,7 @@ ul { list-style: none; }
 }
 .terrain-img:hover::before { opacity: 1; }
 
-/* ===== FOOTER BRAND LOGO GLOW ===== */
-.footer-brand .logo-white:hover {
-  text-shadow: 0 0 20px rgba(96,165,250,0.6), 0 0 40px rgba(96,165,250,0.3);
-  transition: text-shadow 0.3s ease;
+/* ===== FOOTER BRAND LOGO GLOW — désactivé ===== */
 }
 
 
@@ -2655,6 +2646,7 @@ ul { list-style: none; }
   width: 100%;
   margin-top: 60px;
   overflow: hidden;
+  background: #f0f4ff;
 }
 
 .plat-section {
@@ -2663,6 +2655,7 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #f0f4ff;
 }
 .plat-section-light { background: #f0f4ff; }
 .plat-section-dark  { background: #f0f4ff; }
