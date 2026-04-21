@@ -71,7 +71,7 @@
       <div class="phone-mockup">
         <div class="phone-frame">
           <div class="phone-screen">
-            <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776125545/WhatsApp_Image_2026-04-14_at_1.05.54_AM_izjcfu.jpg" alt="VALIDE " style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" />
+            <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776125545/WhatsApp_Image_2026-04-14_at_1.05.54_AM_izjcfu.jpg" alt="VALIDE" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;border-radius:inherit;" />
           </div>
         </div>
         <div class="phone-glow"></div>
@@ -93,14 +93,18 @@
         <p data-i18n="about.text">VALIDE est une startup EdTech camerounaise fondée en 2022 par Frank Tchatseu. Ancien élève du Lycée Bilingue de Koutaba, il a vécu de près le manque de ressources pédagogiques. Aujourd'hui, il a décidé que plus aucun jeune ne ratera ses rêves par manque de matériel.</p>
         <div class="mission-vision">
           <div class="mv-card">
-            <div class="mv-icon">🎯</div>
+            <div class="mv-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
             <div>
               <strong data-i18n="about.mission_title">Mission</strong>
               <p data-i18n="about.mission_text">Rendre l'éducation de qualité accessible à chaque élève camerounais, en ville comme en zone reculée.</p>
             </div>
           </div>
           <div class="mv-card">
-            <div class="mv-icon">🌍</div>
+            <div class="mv-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
             <div>
               <strong data-i18n="about.vision_title">Vision</strong>
               <p data-i18n="about.vision_text">Construire une génération compétente, capable de transformer le Cameroun et l'Afrique.</p>
@@ -200,11 +204,14 @@
           </svg>
         </div>
         <div class="plat-mobile">
-          <div class="plat-mobile-frame">
+          <div class="plat-mobile-frame" style="position:relative;">
             <div class="plat-mobile-notch"></div>
             <div class="plat-mobile-screen">
-              <video src="https://res.cloudinary.com/drknixj4y/video/upload/v1775930069/WhatsApp_Video_2026-04-11_at_11.29.11_AM_ehymkw.mp4" autoplay muted loop playsinline></video>
+              <video src="https://res.cloudinary.com/drknixj4y/video/upload/v1776744124/IMG_4666_kifibh.mp4" autoplay muted loop playsinline></video>
             </div>
+            <button class="plat-zoom-btn" onclick="openVideoLightbox('https://res.cloudinary.com/drknixj4y/video/upload/v1776744124/IMG_4666_kifibh.mp4')" aria-label="Agrandir">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+            </button>
           </div>
           <div class="plat-mobile-glow plat-glow-1"></div>
         </div>
@@ -242,11 +249,14 @@
           </svg>
         </div>
         <div class="plat-mobile">
-          <div class="plat-mobile-frame plat-mobile-dark">
+          <div class="plat-mobile-frame plat-mobile-dark" style="position:relative;">
             <div class="plat-mobile-notch"></div>
             <div class="plat-mobile-screen">
               <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ&controls=0&modestbranding=1&rel=0&playsinline=1" allow="autoplay; encrypted-media" allowfullscreen title="VALIDE School"></iframe>
             </div>
+            <button class="plat-zoom-btn" onclick="openVideoLightbox('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=1')" aria-label="Agrandir">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+            </button>
           </div>
           <div class="plat-mobile-glow plat-glow-2"></div>
         </div>
@@ -386,6 +396,41 @@
   </div>
 </section>
 
+<!-- EVENT HIGHLIGHT -->
+<section class="event-highlight section-light" id="event">
+  <div class="container">
+    <div class="event-hl-grid fade-up">
+
+      <div class="event-hl-media">
+        <div class="event-hl-video-wrap">
+          <video
+            id="eventVideo"
+            src="https://res.cloudinary.com/drknixj4y/video/upload/v1776744148/WhatsApp_Video_2026-04-11_at_12.02.56_PM_kz2sk5.mp4"
+            playsinline
+            preload="metadata"
+          ></video>
+          <button class="event-hl-play" id="eventPlayBtn" aria-label="Lire la vidéo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="event-hl-text">
+        <span class="section-tag">Événement</span>
+        <h2>VALIDE à la finale du<br /><span class="highlight">POESAM 2024.</span></h2>
+        <p>VALIDE a participé à la <strong>14ème édition du POESAM</strong> — Programme d'Optimisation et d'Encadrement des Startups Africaines et Mondiales — dont la finale s'est tenue à l'<strong>Orange Digital Center</strong> en 2024. Une reconnaissance concrète de l'impact de VALIDE dans l'écosystème EdTech africain.</p>
+        <button class="event-hl-cta" onclick="document.getElementById('eventVideo').play(); document.getElementById('eventPlayBtn').style.display='none';">
+          <span class="event-hl-cta-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+          Voir la finale POESAM
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- IMPACT / RÉALISATIONS -->
 <section class="impact" id="impact">
   <div class="container">
@@ -407,7 +452,7 @@
           <div class="crtv-thumb">
             <video
               id="crtvIframe"
-              src="https://res.cloudinary.com/drknixj4y/video/upload/v1775930069/WhatsApp_Video_2026-04-11_at_11.29.11_AM_ehymkw.mp4"
+              src="https://res.cloudinary.com/drknixj4y/video/upload/v1776744108/IMG_4665_kxq9yn.mp4"
               controls
               playsinline
               preload="metadata"
@@ -454,7 +499,7 @@
           </div>
         </div>
         <div class="partner-logo">
-          <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776349108/logo_titi_fgyzx1.jpg" alt="Fondation TITI" loading="lazy" />
+          <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776744020/logo_titi-Photoroom_qicxfk.png" alt="Fondation TITI" loading="lazy" />
           <div class="partner-overlay">
             <span class="partner-name">Fondation TITI</span>
             <span class="partner-founder">Fondatrice · Titi Nkemdirim</span>
@@ -468,7 +513,7 @@
           </div>
         </div>
         <div class="partner-logo">
-          <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776349107/images_jppyhg.jpg" alt="CamairTech" loading="lazy" />
+          <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776744012/images-Photoroom_ay8k4q.png" alt="CamairTech" loading="lazy" />
           <div class="partner-overlay">
             <span class="partner-name">CamairTech</span>
             <span class="partner-founder">Fondateur · Boris Atangana</span>
@@ -838,6 +883,8 @@
   </button>
   <div class="lb-content">
     <img class="lb-img" src="" alt="" />
+    <video class="lb-video" controls playsinline style="display:none;max-width:90vw;max-height:80vh;border-radius:12px;"></video>
+    <iframe class="lb-iframe" src="" allow="autoplay; encrypted-media" allowfullscreen style="display:none;width:90vw;max-width:900px;height:50vw;max-height:500px;border:none;border-radius:12px;"></iframe>
     <p class="lb-caption"></p>
   </div>
 </div>

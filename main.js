@@ -427,7 +427,7 @@ function toggleMuteVideo(videoId, btnId) {
 
 // ===== CRTV LANG TOGGLE =====
 const CRTV_VIDEOS = {
-  FR: 'https://res.cloudinary.com/drknixj4y/video/upload/v1775930069/WhatsApp_Video_2026-04-11_at_11.29.11_AM_ehymkw.mp4',
+  FR: 'https://res.cloudinary.com/drknixj4y/video/upload/v1776744108/IMG_4665_kxq9yn.mp4',
   EN: 'https://res.cloudinary.com/drknixj4y/video/upload/v1775930069/WhatsApp_Video_2026-04-11_at_11.29.11_AM_ehymkw.mp4' // remplacer par URL EN
 };
 
@@ -496,3 +496,70 @@ function scrollTesti(dir) {
 // ===== FOOTER YEAR =====
 const yearEl = document.getElementById('footer-year');
 if (yearEl) yearEl.textContent = '© ' + new Date().getFullYear() + ' VALIDE — Tous droits réservés';
+
+// ===== PARTNER LOGO TOUCH (mobile) =====
+document.querySelectorAll('.partner-logo').forEach(logo => {
+  logo.addEventListener('touchstart', () => {
+    document.querySelectorAll('.partner-logo').forEach(l => l.classList.remove('touch-active'));
+    logo.classList.add('touch-active');
+  }, { passive: true });
+});
+document.addEventListener('touchstart', e => {
+  if (!e.target.closest('.partner-logo')) {
+    document.querySelectorAll('.partner-logo').forEach(l => l.classList.remove('touch-active'));
+  }
+}, { passive: true });
+
+// ===== EVENT HIGHLIGHT VIDEO =====
+document.addEventListener('DOMContentLoaded', () => {
+  const video = document.getElementById('eventVideo');
+  const btn = document.getElementById('eventPlayBtn');
+  if (!video || !btn) return;
+  btn.addEventListener('click', () => {
+    video.play();
+    btn.style.display = 'none';
+  });
+  video.addEventListener('pause', () => { btn.style.display = 'flex'; });
+  video.addEventListener('ended', () => { btn.style.display = 'flex'; });
+});
+
+// ===== VIDEO LIGHTBOX =====
+function openVideoLightbox(src) {
+  const lb = document.getElementById('lightbox');
+  const img = lb.querySelector('.lb-img');
+  const video = lb.querySelector('.lb-video');
+  const iframe = lb.querySelector('.lb-iframe');
+
+  img.style.display = 'none';
+  img.src = '';
+
+  if (src.includes('youtube.com') || src.includes('youtu.be')) {
+    video.style.display = 'none';
+    video.src = '';
+    iframe.src = src;
+    iframe.style.display = 'block';
+  } else {
+    iframe.style.display = 'none';
+    iframe.src = '';
+    video.src = src;
+    video.style.display = 'block';
+    video.play();
+  }
+
+  lb.querySelector('.lb-caption').textContent = '';
+  lb.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+// Étendre closeLightbox pour stopper la vidéo
+const _origClose = closeLightbox;
+closeLightbox = function() {
+  const lb = document.getElementById('lightbox');
+  const video = lb.querySelector('.lb-video');
+  const iframe = lb.querySelector('.lb-iframe');
+  if (video) { video.pause(); video.src = ''; video.style.display = 'none'; }
+  if (iframe) { iframe.src = ''; iframe.style.display = 'none'; }
+  const img = lb.querySelector('.lb-img');
+  if (img) img.style.display = 'block';
+  _origClose();
+};
