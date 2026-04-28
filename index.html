@@ -22,6 +22,7 @@
       <li><a href="#about" data-i18n="nav.about">À propos</a></li>
       <li><a href="#platforms" data-i18n="nav.platforms">Plateformes</a></li>
       <li><a href="#impact" data-i18n="nav.impact">Réalisations</a></li>
+      <li><a href="#partners">Partenaires</a></li>
       <li><a href="#team" data-i18n="nav.team">Équipe</a></li>
       <li><a href="#contact" class="btn-nav" data-i18n="nav.contact">Nous contacter</a></li>
     </ul>
@@ -40,6 +41,7 @@
     <li><a href="#about" data-i18n="nav.about">À propos</a></li>
     <li><a href="#platforms" data-i18n="nav.platforms">Plateformes</a></li>
     <li><a href="#impact" data-i18n="nav.impact">Réalisations</a></li>
+    <li><a href="#partners">Partenaires</a></li>
     <li><a href="#team" data-i18n="nav.team">Équipe</a></li>
     <li><a href="#contact" data-i18n="nav.contact">Nous contacter</a></li>
   </ul>
@@ -57,13 +59,13 @@
       <h1><span data-i18n="hero.title"></span><br /><span class="highlight" data-i18n="hero.highlight"></span></h1>
       <p data-i18n="hero.subtitle"></p>
       <div class="hero-cta">
-        <a href="#platforms" class="btn btn-primary">
-          <svg width="18" height="18" viewBox="0 0 512 512" fill="currentColor"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256-256L47 0zm425.6 225.6l-58.9-34-65.7 64.5 65.7 64.5 60.1-34.3c17.1-9.8 17.1-34.9-1.2-60.7zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
-          <span data-i18n="hero.play_store">Play Store</span>
+        <a href="#contact" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span data-i18n="hero.contact_us">Nous contacter</span>
         </a>
-        <a href="#platforms" target="_blank" class="btn btn-outline-white">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-          <span data-i18n="hero.app_store"></span>
+        <a href="#platforms" class="btn btn-outline-white">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          <span data-i18n="hero.see_demo">Voir la démo</span>
         </a>
       </div>
     </div>
@@ -78,8 +80,27 @@
       </div>
     </div>
   </div>
-  <div class="hero-wave">
-    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 40 C360 80 1080 0 1440 40 L1440 80 L0 80 Z" fill="#F0F4FF"/></svg>
+
+</section>
+
+<!-- STATS -->
+<section class="stats" id="stats">
+  <div class="stats-bg"></div>
+  <div class="container">
+    <div class="stats-grid fade-up">
+      <div class="stat-card">
+        <div class="stat-number" data-target="25000">0</div>
+        <div class="stat-label" data-i18n="stats.label1">étudiants touchés</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="500">0</div>
+        <div class="stat-label" data-i18n="stats.label2">écoles partenaires</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="12000">0</div>
+        <div class="stat-label" data-i18n="stats.label3">étudiants ayant réussi</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -162,272 +183,98 @@
   </div>
 </section>
 
-<!-- ECOSYSTEM / PLATFORMS -->
-<section class="platforms section-light" id="platforms">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-tag" data-i18n="platforms.tag">L'écosystème VALIDE</span>
-      <h2 data-i18n="platforms.title">Deux plateformes,<br />un seul objectif.</h2>
-    </div>
-  </div>
-
-  <div class="plat-full-wrap fade-up">
-
-    <!-- SECTION 1 : VALIDE -->
-    <div class="plat-section plat-section-light">
-      <div class="plat-section-inner">
-        <div class="plat-card plat-card-white">
-          <div class="plat-tag plat-tag-blue" data-i18n="platforms.app_badge">Application Mobile</div>
-          <h3>VALIDE</h3>
-          <p class="plat-subtitle" data-i18n="platforms.app_target">Pour les étudiants universitaires — Yaoundé 1 & 2</p>
-          <ul class="plat-features">
-            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.app_feat1">Anciens sujets d'examens classés par matière</span></li>
-            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.app_feat2">Assistant IA pédagogique 24h/24</span></li>
-            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.app_feat3">Quiz intelligents personnalisés</span></li>
-            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.app_feat4">Mode hors connexion</span></li>
-          </ul>
-          <div class="plat-btns">
-            <a href="https://play.google.com/store/apps/details?id=com.team.valide" target="_blank" class="plat-btn-new plat-btn-blue">
-              <svg width="14" height="14" viewBox="0 0 512 512" fill="currentColor"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256-256L47 0zm425.6 225.6l-58.9-34-65.7 64.5 65.7 64.5 60.1-34.3c17.1-9.8 17.1-34.9-1.2-60.7zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
-              Play Store
-            </a>
-            <a href="https://apps.apple.com/cm/app/valide/id6467521666?l=en-GB" target="_blank" class="plat-btn-new plat-btn-blue">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              App Store
-            </a>
-          </div>
-        </div>
-        <div class="plat-arrow-link">
-          <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 50 C20 50 80 10 95 10" stroke="#2a5298" stroke-width="2.5" stroke-dasharray="6 4" stroke-linecap="round"/>
-            <polygon points="89,5 98,10 89,15" fill="#2a5298"/>
-          </svg>
-        </div>
-        <div class="plat-mobile">
-          <div class="plat-mobile-frame" style="position:relative;">
-            <div class="plat-mobile-notch"></div>
-            <div class="plat-mobile-screen">
-              <video src="https://res.cloudinary.com/drknixj4y/video/upload/v1776744124/IMG_4666_kifibh.mp4" autoplay muted loop playsinline></video>
-            </div>
-            <button class="plat-zoom-btn" onclick="openVideoLightbox('https://res.cloudinary.com/drknixj4y/video/upload/v1776744124/IMG_4666_kifibh.mp4')" aria-label="Agrandir">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
-            </button>
-          </div>
-          <div class="plat-mobile-glow plat-glow-1"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SECTION 2 : VALIDE SCHOOL -->
-    <div class="plat-section plat-section-dark">
-      <div class="plat-section-inner">
-        <div class="plat-card plat-card-navy">
-          <div class="plat-tag plat-tag-white" data-i18n="platforms.web_badge">Application Mobile</div>
-          <h3>VALIDE School</h3>
-          <p class="plat-subtitle" data-i18n="platforms.web_target">Pour les élèves du secondaire — Lycées & Collèges</p>
-          <ul class="plat-features">
-            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.web_feat1">Sujets officiels : Bac, Probatoire, GCE, BPC</span></li>
-            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.web_feat2">Cours et sujets de séquences par matière</span></li>
-            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.web_feat3">Quiz d'auto-évaluation + corrections</span></li>
-            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.web_feat4">Assistant IA disponible à tout moment</span></li>
-          </ul>
-          <div class="plat-btns">
-            <a href="https://play.google.com/store/apps/details?id=com.valideStartup.valideSchool" target="_blank" class="plat-btn-new plat-btn-white">
-              <svg width="14" height="14" viewBox="0 0 512 512" fill="currentColor"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256-256L47 0zm425.6 225.6l-58.9-34-65.7 64.5 65.7 64.5 60.1-34.3c17.1-9.8 17.1-34.9-1.2-60.7zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
-              Play Store
-            </a>
-            <a href="https://apps.apple.com/cm/app/valide-school/id6752827673?l=en-GB" target="_blank" class="plat-btn-new plat-btn-white">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              App Store
-            </a>
-          </div>
-        </div>
-        <div class="plat-arrow-link">
-          <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 50 C20 50 80 10 95 10" stroke="#2a5298" stroke-width="2.5" stroke-dasharray="6 4" stroke-linecap="round"/>
-            <polygon points="89,5 98,10 89,15" fill="#2a5298"/>
-          </svg>
-        </div>
-        <div class="plat-mobile">
-          <div class="plat-mobile-frame plat-mobile-dark" style="position:relative;">
-            <div class="plat-mobile-notch"></div>
-            <div class="plat-mobile-screen">
-              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ&controls=0&modestbranding=1&rel=0&playsinline=1" allow="autoplay; encrypted-media" allowfullscreen title="VALIDE School"></iframe>
-            </div>
-            <button class="plat-zoom-btn" onclick="openVideoLightbox('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=1')" aria-label="Agrandir">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
-            </button>
-          </div>
-          <div class="plat-mobile-glow plat-glow-2"></div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- FEATURES -->
-<section class="features" id="features">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-tag light" data-i18n="features.tag">Fonctionnalités</span>
-      <h2 data-i18n="features.title">Tout ce dont tu as besoin<br />pour réussir.</h2>
-    </div>
-    <div class="features-grid fade-up">
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-        </div>
-        <h4 data-i18n="features.feat1_title">Ressources pédagogiques</h4>
-        <p data-i18n="features.feat1_text">Sujets officiels, corrections et cours — organisés par matière et niveau.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 1 8 8c0 3-1.5 5.5-4 7v2H8v-2c-2.5-1.5-4-4-4-7a8 8 0 0 1 8-8z"/><line x1="9" y1="22" x2="15" y2="22"/><line x1="12" y1="6" x2="12" y2="12"/><line x1="9" y1="9" x2="12" y2="12"/></svg>
-        </div>
-        <h4 data-i18n="features.feat2_title">Assistant IA</h4>
-        <p data-i18n="features.feat2_text">Un enseignant disponible 24h/24. Il n'donne pas la réponse — il enseigne.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-        </div>
-        <h4 data-i18n="features.feat3_title">Quiz intelligents</h4>
-        <p data-i18n="features.feat3_text">Générés selon tes difficultés. Corrections détaillées après chaque session.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="6" x2="3" y2="6"/><line x1="1" y1="10" x2="3" y2="10"/><line x1="1" y1="14" x2="3" y2="14"/><line x1="1" y1="18" x2="3" y2="18"/><rect x="3" y="2" width="18" height="20" rx="2"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg>
-        </div>
-        <h4 data-i18n="features.feat4_title">Mode hors connexion</h4>
-        <p data-i18n="features.feat4_text">Toutes les ressources accessibles sans internet. Conçu pour les zones reculées.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- STATS -->
-<section class="stats" id="stats">
-  <div class="stats-bg"></div>
-  <div class="container">
-    <div class="stats-grid fade-up">
-      <div class="stat-card">
-        <div class="stat-number" data-target="25000">0</div>
-        <div class="stat-label" data-i18n="stats.label1">étudiants inscrits</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number" data-target="10000">0</div>
-        <div class="stat-label" data-i18n="stats.label2">ressources numérisées</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number" data-target="4000">0</div>
-        <div class="stat-label" data-i18n="stats.label3">quiz disponibles</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number" data-target="5000">0</div>
-        <div class="stat-label" data-i18n="stats.label4">élèves du secondaire</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="how" id="how">
-  <div class="how-bg">
-    <div class="how-shape how-shape-1"></div>
-    <div class="how-shape how-shape-2"></div>
-  </div>
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-tag light" data-i18n="how.tag">Comment ça marche</span>
-      <h2 data-i18n="how.title">En 4 étapes simples.</h2>
-      <p class="section-sub" style="color:rgba(255,255,255,0.65)" data-i18n="how.subtitle">De l'inscription à la réussite — tout est pensé pour toi.</p>
-    </div>
-    <div class="steps-new fade-up">
-
-      <div class="step-new">
-        <div class="step-new-icon" style="--c:#4f8ef7">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12l4 4 4-4M12 8v8"/></svg>
-        </div>
-        <div class="step-new-num">01</div>
-        <h4 data-i18n="how.step1_title">Télécharge ou accède</h4>
-        <p data-i18n="how.step1_text">Play Store / App Store pour l'université · valide-school.com pour le secondaire</p>
-      </div>
-
-      <div class="step-connector">
-        <svg viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 10 Q40 0 80 10" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="4 4"/><polygon points="74,6 80,10 74,14" fill="rgba(255,255,255,0.3)"/></svg>
-      </div>
-
-      <div class="step-new">
-        <div class="step-new-icon" style="--c:#a78bfa">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        </div>
-        <div class="step-new-num">02</div>
-        <h4 data-i18n="how.step2_title">Inscris-toi</h4>
-        <p data-i18n="how.step2_text">Précise ta classe, ton niveau et tes matières difficiles</p>
-      </div>
-
-      <div class="step-connector">
-        <svg viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 10 Q40 0 80 10" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="4 4"/><polygon points="74,6 80,10 74,14" fill="rgba(255,255,255,0.3)"/></svg>
-      </div>
-
-      <div class="step-new">
-        <div class="step-new-icon" style="--c:#34d399">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-        </div>
-        <div class="step-new-num">03</div>
-        <h4 data-i18n="how.step3_title">Accède à tes ressources</h4>
-        <p data-i18n="how.step3_text">Sujets, corrections, cours — organisés et accessibles en un clic</p>
-      </div>
-
-      <div class="step-connector">
-        <svg viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 10 Q40 0 80 10" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="4 4"/><polygon points="74,6 80,10 74,14" fill="rgba(255,255,255,0.3)"/></svg>
-      </div>
-
-      <div class="step-new">
-        <div class="step-new-icon" style="--c:#fb923c">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-        </div>
-        <div class="step-new-num">04</div>
-        <h4 data-i18n="how.step4_title">Évalue-toi et progresse</h4>
-        <p data-i18n="how.step4_text">Quiz intelligents + corrections + assistant IA à tout moment</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <!-- EVENT HIGHLIGHT -->
 <section class="event-highlight section-light" id="event">
   <div class="container">
-    <div class="event-hl-grid fade-up">
+    <div class="section-header fade-up">
+      <span class="section-tag">Événements</span>
+      <h2>VALIDE sur la scène.</h2>
+    </div>
 
-      <div class="event-hl-media">
-        <div class="event-hl-video-wrap">
-          <video
-            id="eventVideo"
-            src="https://res.cloudinary.com/drknixj4y/video/upload/v1776744148/WhatsApp_Video_2026-04-11_at_12.02.56_PM_kz2sk5.mp4"
-            playsinline
-            preload="metadata"
-          ></video>
-          <button class="event-hl-play" id="eventPlayBtn" aria-label="Lire la vidéo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-          </button>
+    <div class="event-carousel fade-up">
+      <!-- Bouton gauche -->
+      <button class="event-nav event-nav-prev" id="evtPrev" aria-label="Précédent">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+
+      <!-- Track -->
+      <div class="event-track-wrap">
+        <div class="event-track" id="evtTrack">
+
+          <!-- Événement 1 — vidéo -->
+          <div class="event-slide">
+            <div class="event-slide-media">
+              <video class="evt-video" src="https://res.cloudinary.com/drknixj4y/video/upload/v1776744148/WhatsApp_Video_2026-04-11_at_12.02.56_PM_kz2sk5.mp4" playsinline preload="metadata"></video>
+              <div class="evt-controls">
+                <button class="evt-btn evt-play" aria-label="Lecture/Pause">
+                  <svg class="icon-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                </button>
+                <button class="evt-btn evt-zoom" aria-label="Agrandir">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="event-slide-text">
+              <span class="event-slide-tag">Compétition</span>
+              <h3>VALIDE à la finale du <span class="highlight">POESAM 2024.</span></h3>
+              <p>VALIDE a participé à la <strong>14ème édition du POESAM</strong> — dont la finale s'est tenue à l'<strong>Orange Digital Center</strong> en 2024.</p>
+            </div>
+          </div>
+
+          <!-- Événement 2 — vidéo CRTV -->
+          <div class="event-slide">
+            <div class="event-slide-media">
+              <video class="evt-video" src="https://res.cloudinary.com/drknixj4y/video/upload/v1776744108/IMG_4665_kxq9yn.mp4" playsinline preload="metadata"></video>
+              <div class="evt-controls">
+                <button class="evt-btn evt-play" aria-label="Lecture/Pause">
+                  <svg class="icon-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                </button>
+                <button class="evt-btn evt-zoom" aria-label="Agrandir">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="event-slide-text">
+              <span class="event-slide-tag">Médias</span>
+              <h3>VALIDE à la <span class="highlight">télévision nationale.</span></h3>
+              <p>VALIDE présenté dans un reportage de la <strong>CRTV</strong>, avec des témoignages d'étudiants utilisant la plateforme au quotidien.</p>
+            </div>
+          </div>
+
+          <!-- Événement 3 — vidéo terrain -->
+          <div class="event-slide">
+            <div class="event-slide-media">
+              <video class="evt-video" src="https://res.cloudinary.com/drknixj4y/video/upload/v1776744148/WhatsApp_Video_2026-04-11_at_12.02.56_PM_kz2sk5.mp4" playsinline preload="metadata"></video>
+              <div class="evt-controls">
+                <button class="evt-btn evt-play" aria-label="Lecture/Pause">
+                  <svg class="icon-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                </button>
+                <button class="evt-btn evt-zoom" aria-label="Agrandir">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="event-slide-text">
+              <span class="event-slide-tag">Terrain</span>
+              <h3>VALIDE dans les <span class="highlight">universités.</span></h3>
+              <p>Des sessions de présentation directement dans les campus pour rencontrer les étudiants et recueillir leurs retours.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="event-hl-text">
-        <span class="section-tag">Événement</span>
-        <h2>VALIDE à la finale du<br /><span class="highlight">POESAM 2024.</span></h2>
-        <p>VALIDE a participé à la <strong>14ème édition du POESAM</strong> — Programme d'Optimisation et d'Encadrement des Startups Africaines et Mondiales — dont la finale s'est tenue à l'<strong>Orange Digital Center</strong> en 2024. Une reconnaissance concrète de l'impact de VALIDE dans l'écosystème EdTech africain.</p>
-        <button class="event-hl-cta" onclick="document.getElementById('eventVideo').play(); document.getElementById('eventPlayBtn').style.display='none';">
-          <span class="event-hl-cta-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-          </span>
-          Voir la finale POESAM
-        </button>
-      </div>
-
+      <!-- Bouton droite -->
+      <button class="event-nav event-nav-next" id="evtNext" aria-label="Suivant">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
     </div>
+
+    <!-- Dots -->
+    <div class="event-dots" id="evtDots"></div>
   </div>
 </section>
 
@@ -487,33 +334,171 @@
       <div class="terrain-pagination" id="terrainPagination"></div>
     </div>
 
-    <!-- Partenaires -->
-    <div class="partners-block fade-up">
-      <h3 data-i18n="impact.partners_title">Partenariats stratégiques</h3>
-      <div class="partners-grid">
-        <div class="partner-logo">
-          <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776349478/afrik_foaswe.jpg" alt="Afrik Délice" loading="lazy" />
-          <div class="partner-overlay">
-            <span class="partner-name">Afrik Délice</span>
-          </div>
+  </div>
+</section>
+
+<!-- ECOSYSTEM / PLATFORMS -->
+<section class="platforms" id="platforms">
+
+  <!-- VALIDE — fond clair, texte gauche, phone droite -->
+  <div class="plat-row plat-row-light fade-up">
+    <div class="container plat-row-inner">
+      <div class="plat-row-text">
+        <span class="plat-badge plat-badge-blue" data-i18n="platforms.app_badge">Application Mobile</span>
+        <h2 class="plat-row-title">VALIDE</h2>
+        <p class="plat-row-sub" data-i18n="platforms.app_target">Pour les étudiants universitaires — Yaoundé 1 & 2</p>
+        <ul class="plat-row-features">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.app_feat1">Anciens sujets d'examens classés par matière</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.app_feat2">Assistant IA pédagogique 24h/24</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.app_feat3">Quiz intelligents personnalisés</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.app_feat4">Mode hors connexion</span></li>
+        </ul>
+        <div class="plat-row-btns">
+          <a href="https://play.google.com/store/apps/details?id=com.team.valide" target="_blank" class="plat-btn-new plat-btn-blue">
+            <svg width="14" height="14" viewBox="0 0 512 512" fill="currentColor"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256-256L47 0zm425.6 225.6l-58.9-34-65.7 64.5 65.7 64.5 60.1-34.3c17.1-9.8 17.1-34.9-1.2-60.7zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+            Play Store
+          </a>
+          <a href="https://apps.apple.com/cm/app/valide/id6467521666?l=en-GB" target="_blank" class="plat-btn-new plat-btn-blue">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            App Store
+          </a>
         </div>
-        <div class="partner-logo">
-          <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776744020/logo_titi-Photoroom_qicxfk.png" alt="Fondation TITI" loading="lazy" />
-          <div class="partner-overlay">
-            <span class="partner-name">Fondation TITI</span>
+      </div>
+      <div class="plat-row-arrow">
+        <svg viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 50 C40 50 80 10 110 10" stroke="#2a5298" stroke-width="2" stroke-dasharray="6 4" stroke-linecap="round"/>
+          <polygon points="104,5 113,10 104,15" fill="#2a5298"/>
+        </svg>
+      </div>
+      <div class="plat-row-phone">
+        <div class="plat-phone-wrap">
+          <div class="plat-phone-frame">
+            <div class="plat-phone-notch"></div>
+            <div class="plat-phone-screen">
+              <video src="https://res.cloudinary.com/drknixj4y/video/upload/v1776744124/IMG_4666_kifibh.mp4" autoplay muted loop playsinline></video>
+            </div>
           </div>
+          <div class="plat-phone-glow plat-glow-blue"></div>
         </div>
-        <div class="partner-logo">
-          <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776349142/images_1_hjnpib.jpg" alt="Pensezy" loading="lazy" />
-          <div class="partner-overlay">
-            <span class="partner-name">Pensezy</span>
-          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VALIDE SCHOOL — fond sombre, texte gauche, phone droite -->
+  <div class="plat-row plat-row-dark fade-up">
+    <div class="container plat-row-inner">
+      <div class="plat-row-text">
+        <span class="plat-badge plat-badge-light" data-i18n="platforms.web_badge">Application Mobile</span>
+        <h2 class="plat-row-title">VALIDE School</h2>
+        <p class="plat-row-sub" data-i18n="platforms.web_target">Pour les élèves du secondaire — Lycées & Collèges</p>
+        <ul class="plat-row-features">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.web_feat1">Sujets officiels : Bac, Probatoire, GCE, BPC</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.web_feat2">Cours et sujets de séquences par matière</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.web_feat3">Quiz d'auto-évaluation + corrections</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="platforms.web_feat4">Assistant IA disponible à tout moment</span></li>
+        </ul>
+        <div class="plat-row-btns">
+          <a href="https://play.google.com/store/apps/details?id=com.valideStartup.valideSchool" target="_blank" class="plat-btn-new plat-btn-white">
+            <svg width="14" height="14" viewBox="0 0 512 512" fill="currentColor"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256-256L47 0zm425.6 225.6l-58.9-34-65.7 64.5 65.7 64.5 60.1-34.3c17.1-9.8 17.1-34.9-1.2-60.7zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+            Play Store
+          </a>
+          <a href="https://apps.apple.com/cm/app/valide-school/id6752827673?l=en-GB" target="_blank" class="plat-btn-new plat-btn-white">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            App Store
+          </a>
         </div>
-        <div class="partner-logo">
-          <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776744012/images-Photoroom_ay8k4q.png" alt="CamairTech" loading="lazy" />
-          <div class="partner-overlay">
-            <span class="partner-name">CamairTech</span>
+      </div>
+      <div class="plat-row-arrow plat-row-arrow-dark">
+        <svg viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 50 C40 50 80 10 110 10" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-dasharray="6 4" stroke-linecap="round"/>
+          <polygon points="104,5 113,10 104,15" fill="rgba(255,255,255,0.4)"/>
+        </svg>
+      </div>
+      <div class="plat-row-phone">
+        <div class="plat-phone-wrap">
+          <div class="plat-phone-frame plat-phone-dark">
+            <div class="plat-phone-notch"></div>
+            <div class="plat-phone-screen">
+              <video src="https://res.cloudinary.com/drknixj4y/video/upload/v1776744124/IMG_4666_kifibh.mp4" autoplay muted loop playsinline></video>
+            </div>
           </div>
+          <div class="plat-phone-glow plat-glow-purple"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-tag light" data-i18n="features.tag">Fonctionnalités</span>
+      <h2 data-i18n="features.title">Tout ce dont tu as besoin<br />pour réussir.</h2>
+    </div>
+    <div class="features-grid fade-up">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </div>
+        <h4 data-i18n="features.feat1_title">Ressources pédagogiques</h4>
+        <p data-i18n="features.feat1_text">Sujets officiels, corrections et cours — organisés par matière et niveau.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 1 8 8c0 3-1.5 5.5-4 7v2H8v-2c-2.5-1.5-4-4-4-7a8 8 0 0 1 8-8z"/><line x1="9" y1="22" x2="15" y2="22"/><line x1="12" y1="6" x2="12" y2="12"/><line x1="9" y1="9" x2="12" y2="12"/></svg>
+        </div>
+        <h4 data-i18n="features.feat2_title">Assistant IA</h4>
+        <p data-i18n="features.feat2_text">Un enseignant disponible 24h/24. Il n'donne pas la réponse — il enseigne.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h4 data-i18n="features.feat3_title">Quiz intelligents</h4>
+        <p data-i18n="features.feat3_text">Générés selon tes difficultés. Corrections détaillées après chaque session.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="6" x2="3" y2="6"/><line x1="1" y1="10" x2="3" y2="10"/><line x1="1" y1="14" x2="3" y2="14"/><line x1="1" y1="18" x2="3" y2="18"/><rect x="3" y="2" width="18" height="20" rx="2"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg>
+        </div>
+        <h4 data-i18n="features.feat4_title">Mode hors connexion</h4>
+        <p data-i18n="features.feat4_text">Toutes les ressources accessibles sans internet. Conçu pour les zones reculées.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners-section section-light" id="partners">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-tag" data-i18n="partners.tag">Partenaires</span>
+      <h2 data-i18n="partners.title">Partenariats stratégiques</h2>
+    </div>
+    <div class="partners-grid fade-up">
+      <div class="partner-logo">
+        <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776349478/afrik_foaswe.jpg" alt="Afrik Délice" loading="lazy" />
+        <div class="partner-overlay">
+          <span class="partner-name">Afrik Délice</span>
+        </div>
+      </div>
+      <div class="partner-logo">
+        <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776744020/logo_titi-Photoroom_qicxfk.png" alt="Fondation TITI" loading="lazy" />
+        <div class="partner-overlay">
+          <span class="partner-name">Fondation TITI</span>
+        </div>
+      </div>
+      <div class="partner-logo">
+        <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776349142/images_1_hjnpib.jpg" alt="Pensezy" loading="lazy" />
+        <div class="partner-overlay">
+          <span class="partner-name">Pensezy</span>
+        </div>
+      </div>
+      <div class="partner-logo">
+        <img src="https://res.cloudinary.com/drknixj4y/image/upload/v1776744012/images-Photoroom_ay8k4q.png" alt="CamairTech" loading="lazy" />
+        <div class="partner-overlay">
+          <span class="partner-name">CamairTech</span>
         </div>
       </div>
     </div>
@@ -806,7 +791,7 @@
     <h2 data-i18n="cta.title">Rejoins les 25 000+ étudiants<br />qui réussissent avec VALIDE.</h2>
     <p data-i18n="cta.subtitle">Gratuit. Simple. Accessible partout au Cameroun.</p>
     <div class="cta-btns">
-      <a href="#platforms" class="btn btn-white" data-i18n="cta.btn_app">Télécharger l'app</a>
+      <a href="#contact" class="btn btn-white" data-i18n="cta.btn_app">Nous contacter</a>
     </div>
   </div>
 </section>
@@ -837,9 +822,14 @@
       <ul>
         <li><a href="#home" data-i18n="footer.nav_home">Accueil</a></li>
         <li><a href="#about" data-i18n="footer.nav_about">À propos</a></li>
+        <li><a href="#problem">Le contexte</a></li>
         <li><a href="#platforms" data-i18n="footer.nav_platforms">Plateformes</a></li>
+        <li><a href="#features">Fonctionnalités</a></li>
         <li><a href="#impact" data-i18n="footer.nav_impact">Réalisations</a></li>
+        <li><a href="#partners">Partenaires</a></li>
         <li><a href="#team" data-i18n="footer.nav_team">Équipe</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Nous contacter</a></li>
       </ul>
     </div>
     <div class="footer-links">
